@@ -1,5 +1,5 @@
 %% Code Equations
-% Formulate a system of 11 PDE/ODE equations. 8 partial differential equations (CO2, DOC, O2, NH4, NO2, NO3, N2O, N2) and 3 odinary differential equations (b1,b2,b3).
+% Formulate a system of 12 PDE equations. 8 partial differential equations (CO2, DOC, O2, NH4, NO2, NO3, N2O, N2) and 3 odinary differential equations (b1,b2,b3).
 % PDE: 2 independent varibales x and t, dependent variable u. ODE: t and u.
 % x [m], t [day], u [mmol/L]
 % indexes of vector u. 1: CO2, 2: DOC (mmolC/L), 3: O2, 4: b_AER, 5: NH4, 6:

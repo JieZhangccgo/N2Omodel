@@ -12,16 +12,16 @@ icMesh = msInfo.icMesh;
 icData = msInfo.icData;
 u0 = interp1(icMesh,icData',x,'pchip')';
 
-a_down = 7;
-a_up = 10;
-if (x>icMesh(a_down-1)) && (x < icMesh(a_down))
-    u0(2)=icData(2,a_down-1); % update initial 2.DOC
-    u0(5)=icData(5,a_down-1); % update initial 5.NH4
-    u0(7)=icData(7,a_down-1);   % update initial 7.NO3
-elseif (x>icMesh(a_up)) && (x < icMesh(a_up+1))
-    u0(2)=icData(2,a_up+1);   % update initial 2.DOC
-    u0(5)=icData(5,a_up+1);   % update initial 5.NH4
-    u0(7)=icData(7,a_up+1);   % update initial 7.NO3
-end
+% a_down = 7;
+% a_up = 10;
+% if (x>icMesh(a_down-1)) && (x < icMesh(a_down))
+%     u0(2)=icData(2,a_down-1); % update initial 2.DOC
+%     u0(5)=icData(5,a_down-1); % update initial 5.NH4
+%     u0(7)=icData(7,a_down-1);   % update initial 7.NO3
+% elseif (x>icMesh(a_up)) && (x < icMesh(a_up+1))
+%     u0(2)=icData(2,a_up+1);   % update initial 2.DOC
+%     u0(5)=icData(5,a_up+1);   % update initial 5.NH4
+%     u0(7)=icData(7,a_up+1);   % update initial 7.NO3
+% end
 
 end
